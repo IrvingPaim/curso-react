@@ -9,7 +9,9 @@ const ManageData = () => {
 
     console.log(number)
 
-    return (<div>
+    return (
+
+    <div>
         <div>
             <p>Valor: {someData}</p>
             <button onClick={() => {someData = 15}}>Mudar variável</button>
@@ -19,6 +21,7 @@ const ManageData = () => {
             <button onClick={() => setNumber(25)}>Mudar o state</button>
         </div>
     </div>
+    
     )
 }
 
