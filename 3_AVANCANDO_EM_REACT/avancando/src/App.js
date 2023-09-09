@@ -9,6 +9,9 @@ import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
 import Fragment from './components/Fragment';
 import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
+import Message from './components/Message';
+import ChangeMessageState from './components/ChangeMessageState';
 
 function App() {
   //const name = "Irving"
@@ -20,6 +23,16 @@ function App() {
     { id: 2, brand: "KIA", color: "Branco", newCar: false, km: 34343 },
     { id: 3, brand: "Renault", color: "Azul", newCar: false, km: 234 }
   ]
+
+  function showMessage () {
+    console.log("Evento do componente pai!")
+  }
+
+  const [message, setMessage] = useState("")
+
+  const handleMessage = (msg) => {
+    setMessage(msg)
+  }
 
   return (
     <div className="App">
@@ -43,20 +56,26 @@ function App() {
       <CarDetails brand="Ford" km={0} color="Vermelho" newCar={true} />
       <CarDetails brand="Fiat" km={4500} color="Branco" newCar={false} />
       {/* loop em array de objetos */}
-      {cars.map(({brand, color, km, newCar}) => (
+      {cars.map(({id, brand, color, km, newCar}) => (
       <CarDetails 
+        key={id}
         brand={brand} 
         color={color} 
         km={km} 
         newCar={newCar}
-        />
-        ))}
-        {/* Fragment */}
-        <Fragment propFragment="teste"/>
-        {/* children */}
-        <Container myValue="testing">
-          <p>E este é o conteúdo</p>
-        </Container>
+      />
+      ))}
+      {/* Fragment */}
+      <Fragment propFragment="teste"/>
+      {/* children */}
+      <Container myValue="testing">
+        <p>E este é o conteúdo</p>
+      </Container>
+      {/* executar função */}
+      <ExecuteFunction myFunction={showMessage} />
+      {/* state lift */}
+      <Message msg={message} />  
+      <ChangeMessageState handleMessage={handleMessage} />
     </div>
   );
 }
