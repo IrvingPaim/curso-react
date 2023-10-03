@@ -1,19 +1,39 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Camisa",
-            "price": 59.9
-        },
-        {
-            "id": 2,
-            "name": "Calça Vermelha",
-            "price": 90 
-        },
-        {
-            "id": 3,
-            "name": "Boné Aba Reta",
-            "price": 29.9 
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": 2,
+      "name": "Calça Vermelha",
+      "price": 90
+    },
+    {
+      "id": 3,
+      "name": "Boné Aba Reta",
+      "price": 29.9
+    },
+    {
+      "name": "Irving Paim",
+      "price": "0.00",
+      "id": 4
+    },
+    {
+      "name": "Computador Game",
+      "price": "5000.00",
+      "id": 5
+    },
+    {
+      "name": "Board Game",
+      "price": "200.00",
+      "id": 6
+    },
+    {
+      "name": "Cadeira",
+      "price": "100.00",
+      "id": 7
+    }
+  ]
 }
