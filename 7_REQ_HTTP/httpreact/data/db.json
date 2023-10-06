@@ -39,6 +39,36 @@
       "name": "Cadeira Game",
       "price": "600.00",
       "id": 8
+    },
+    {
+      "name": "Tempo",
+      "price": "1000000",
+      "id": 9
+    },
+    {
+      "name": "Tempo",
+      "price": "1000000",
+      "id": 10
+    },
+    {
+      "name": "Tempo",
+      "price": "1000000",
+      "id": 11
+    },
+    {
+      "name": "Tempo",
+      "price": "1000000",
+      "id": 12
+    },
+    {
+      "name": "Tempo",
+      "price": "1000000",
+      "id": 13
+    },
+    {
+      "name": "Placa Mãe",
+      "price": "500",
+      "id": 14
     }
   ]
 }
